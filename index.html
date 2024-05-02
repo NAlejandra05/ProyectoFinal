@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Páginas Encantadas - Librería Online | Inicio </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <header class="encabezado">
+    
+      <figure class="logo">
+        <img src="img/logo2.png" alt="Páginas Encantadas" />
+      </figure>
+
+      <nav role="navigation">
+        <ul>
+          <li><a class="menu__item" href="#">Inicio</a></li>
+          <li><a class="menu__item" href="#">Catálogo</a></li>
+          <li><a class="menu__item" href="#">Blog</a></li>
+          <li><a class="menu__item" href="#">Sobre nosotros</a></li>
+          <li><a class="menu__item" href="#">Contacto</a></li>
+        </ul>
+
+        <section class="btn">
+          <button id="searchBtn" onclick="redirectToSearch()"> Buscar Productos </button></li>
+          <button id="registerBtn" onclick="redirectToRegister()">Registrar Producto</button></li>
+        </section>
+      </nav>
+    </header>
+
+    <main id="productList">
+
+      <section class="carrucel">
+        <div class="slider-carrusel">
+          <section class="contenido-slider">
+            <div>
+              <h2> Inspirados en libros </h2>
+              <p>Si te gusto la película, seguro te encantará el libro... ¡porque aquí no se omiten detalles! 👀 Encuentra todos los libros que han sido inspiración para las
+                 películas y series más vistas del momento</p>
+                <a href="#">¿Ya Leíste El Libro?</a>
+              </div>
+                <img src="img/1.png" alt="">
+          </section>
+
+          <section class="contenido-slider">
+            <div>
+              <h2>"Llega una revolución"</h2>
+              <p>Javier Milei: el Arquero, el Rocker Stone, el Economista 'austríaco', el Showman, el Bilardista, el Polemista, el Outsider, el Disruptivo, el Anti-comunista, el Despeinado, el Divulgador, el Ideólogo, el
+                 Político, el Candidato y el Presidente de Argentina. Conoce la historia de una de las figuras más disruptivas de Occidente</p>
+                <a href="#">Léelo Aquí</a>
+              </div>
+                <img src="img/2.png" alt="">
+            
+          </section>
+
+          <section class="contenido-slider">
+            <div>
+              <h2>Estamos de fiesta</h2>
+                <p>Llegó el momento de celebrar juntos la magia de los libros en la Feria Internacional del Libro de Bogotá 🥳 Queremos que disfrutes de este espacio cultural y sigas sorprendiéndote por este mundo diferente. ➡️ Recibe 2 entradas para FILBo con tus compras mayores a $120.000cop. TyC: Promoción válida para compras 
+                  realizadas por www.libreriadelau.com o WhatsApp con entrega a la ciudad de Bogotá del 15 al 25 de abril del 2024 o hasta agotar existencias.</p>
+                
+                <a href="#">¡Gana Entradas Comprando Aquí!</a>
+              </div>
+                <img src="img/3.png" alt="">
+            
+          </section>
+          <section class="contenido-slider">
+            <div>
+              <h2>Inspirados en libros</h2>
+              <p>Si te gusto la película, seguro te encantará el libro... ¡porque aquí no se omiten detalles! 👀 Encuentra todos los libros que han sido inspiración para las
+                 películas y series más vistas del momento</p>
+                <a href="#">¿Ya Leíste El Libro?</a>
+              </div>
+                <img src="img/1.png" alt="">
+          </section>
+        </div>
+      </section>
+     
+      <section class="services" id="services">
+        <div class="services-container" id="contenedorlibros">
+        </div>
+
+        <div id="pagination">
+          <button id="prev-btn" onclick="prevPage()">&laquo; Anterior</button>
+          <span id="current-page"></span> de <span id="total-pages"></span>
+          <button id="next-btn" onclick="nextPage()">Siguiente &raquo;</button>
+        </div>
+
+
+    </section> 
+   
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-link">
+          <div class="link">
+            <h3>Contactenos</h3>
+            <ul>
+              <li> Cra. 8 # 9-14, COMUNA 3 
+                <br>Cali, Valle del Cauca </li>
+              <li><a href="mapa"> ¿ Como llegar?</a></li>
+            </ul> 
+          </div>
+
+          <div class="link">
+            <h3>Telefonos</h3>
+            <ul>
+              <li>+57 601 643 43 88</li>
+              <li>+57 601 343 33 88</li>
+              <li>+57 601 643 74 88</li>
+            </ul>
+          </div>
+
+          <div class="link">
+            <h3>Horarios</h3>
+            <ul>
+              <li>Lunes a jueves: 7:00 a.m. a 6:00 p.m.</li>
+              <li>Viernes: 7:00 a.m. a 5:00 p.m</li>
+              <li>Sábados: 9:00 a.m. a 12:00 p.m.</li>
+            </ul>
+          </div>
+
+          <div class="link">
+            <h3>Siguenos</h3>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            
+            <h3>Suscribete</h3>
+            <form action="#" class="suscribete-form">
+              <input type="email" name="" id="" placeholder="Correo">
+              <input class="btnf"  type="submit" value="Enviar">
+            </form>
+          </div>
+        </div>
+
+        <hr>
+        <div class="footer-text">
+          <p>Politica de privacidad</p>
+          <p>Todos los derechos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/Data.js"></script>
+    <script src="js/index.js"></script>
+
+
+</body>
+</html>

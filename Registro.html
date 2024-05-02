@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Páginas Encantadas - Libreria Online</title>
+  <link rel="stylesheet" href="css/Registro.css">
+</head>
+<body>
+
+  <header>
+    <figure>
+      <img src="img/logo2.png" alt="Páginas Encantadas" />
+      <img src="img/eslogan.png" alt="Páginas Encantadas" />
+    </figure>
+  </header>
+
+  <main>
+    <section>
+      <p>" Completa este formulario para agregar tus productos a nuestra plataforma. Por favor, proporciona la información requerida con precisión para garantizar la correcta catalogación.
+         Este formulario te guiará a través de los campos necesarios."</p>
+    </section>
+
+    <form class="productForm">
+
+      <h1> Registro de Nuevo Producto </h1>
+      
+          <label for="titulo">Titulo:</label>
+          <input type="text" id="titulo" maxlength="20" required>
+        
+          <label for="autor">Autor:</label>
+          <input type="text" id="Autor" name="">
+        
+          <label for="genero">Genero:</label>
+          <select id="genero" required>
+            <option value=""> Selecciona una categoría </option>
+            <option value="genero1">Terror</option>
+            <option value="genero2">Ficción</option>
+            <option value="genero3">Infantil</option>
+            <option value="genero4">Aventura</option>
+            <option value="genero5">Fantasía</option>
+            <option value="genero6">Romance</option>
+            <option value="genero7">Misterio</option>
+            <option value="genero8">Histórico</option>
+            <option value="genero9">Clásico</option>
+          </select>
+       
+          <label for="codigo">Código de Producto:</label>
+          <input type="text" id="codigo" minlength="8" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d{2})[A-Za-z\d]{8,}" required>
+       
+        
+          <label for="autor">Editorial:</label>
+          <input type="text" id="editorial" name="">
+        
+          <label for="precio">Precio:</label>
+          <input type="text" id="precio" pattern="\d+(\.\d{1,2})?" required>
+        
+          <label for="añoPublicacion:">Año Publicacion:</label>
+          <input type="text" id="añoPublicacion" name="">
+        
+          <label for="imagen">Imagen:</label>
+          <input type="file" id="imagen" accept="image/*" required>
+        
+       <section class="btn">
+        <button type="submit">Registrar Producto</button>
+        <button type="button" onclick="limpiarCampos()">Limpiar Campos</button>
+       </section> 
+        
+      </form>
+  </main>
+  <script src="js/Registro.js"></script>
+
+</body>
+</html>

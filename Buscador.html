@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Productos</title>
+</head>
+<body>
+    <header>
+        <figure>
+          <img src="img/logo2.png" alt="Páginas Encantadas" />
+          <img src="img/eslogan.png" alt="Páginas Encantadas" />
+          <h1> Buscador de productos </h1>
+    </header>
+
+    <main>
+      <section class="filtros">
+        <section class="filtro__uno">
+          <label for="genero">Filtrar por Genero:</label>
+          <select name="genero" id="gene">
+            <option value=""></option>
+            <option value="genero1">Terror</option>
+            <option value="genero2">Ficción</option>
+            <option value="genero3">Infantil</option>
+            <option value="genero4">Aventura</option>
+            <option value="genero5">Fantasía</option>
+            <option value="genero6">Romance</option>
+            <option value="genero7">Misterio</option>
+            <option value="genero8">Histórico</option>
+            <option value="genero9">Clásico</option>
+          </select>
+        </section>
+        
+        <section class="filtro__dos">
+          <label for="precio">Filtrar por Precio:</label>
+          <label><input class="radiobuton" type="radio" name="preciofilter" value="rango1"> 0 - 30.000</label>
+          <label><input class="radiobuton" type="radio" name="preciofilter" value="rango2"> 30.000 - 60.000 </label>
+          <label><input class="radiobuton" type="radio" name="preciofilter" value="rango3"> 60.000 - 100.000 </label>
+          <label><input class="radiobuton" type="radio" name="preciofilter" value="rango5"> &gt; 100.000 </label>
+        </section>
+
+        <section class="filtros">
+          <section class="filtro__tres">
+            <label for="editorial">Filtrar por editorial:</label>
+            <select name="editorial" id="edit">
+              <option value=""></option>
+              <option value="Editorial1">Editorial ABC</option>
+              <option value="genero2">Editorial DEF</option>
+              <option value="genero3">Editorial GHI</option>
+              <option value="genero4">Editorial JKL</option>
+              <option value="genero5">Editorial MNO</option>
+              <option value="genero6">Editorial PQR</option>
+              <option value="genero7">Editorial XYZ</option>
+            </select>
+          </section>
+          
+        
+        <button onclick="filtrarProductos()" class="btn">Filtrar</button>
+        <button onclick ="cleanAll()" class="btn">Limpiar</button>
+
+      </section>
+
+          <!-- Loading Indicator -->
+          <div class="loading-indicator" style="display: none;">Cargando...</div>
+      
+          <!-- Results List -->
+          <article id="results-list"></article>
+        </form>
+      </section>
+
+      
+
+    </main>
+
+    <script src="js/.js"></script>
+</body>
+</html>
