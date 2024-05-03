@@ -14,64 +14,74 @@
     </header>
 
     <main>
-      <section class="filtros">
-        <section class="filtro__uno">
-          <label for="genero">Filtrar por Genero:</label>
-          <select name="genero" id="gene">
-            <option value=""></option>
-            <option value="genero1">Terror</option>
-            <option value="genero2">Ficción</option>
-            <option value="genero3">Infantil</option>
-            <option value="genero4">Aventura</option>
-            <option value="genero5">Fantasía</option>
-            <option value="genero6">Romance</option>
-            <option value="genero7">Misterio</option>
-            <option value="genero8">Histórico</option>
-            <option value="genero9">Clásico</option>
+      <section id="filtros">
+        <h2>Filtros</h2>
+        <form>
+          <label for="genero">Género:</label>
+          <select id="geneSelect">
+            <option value="">Seleccione un género</option>
+            <option value="">Terror</option>
+            <option value="">Ficción</option>
+            <option value="">Romance</option>
+            <option value="">Clásico</option>
+            <option value="">Fantasía</option>
+            <option value="">Misterio</option>
+            <option value="">Aventura</option>
+            <option value="">Histórico</option>
+            <option value="">Infantil</option>
+
+            
           </select>
-        </section>
-        
-        <section class="filtro__dos">
-          <label for="precio">Filtrar por Precio:</label>
-          <label><input class="radiobuton" type="radio" name="preciofilter" value="rango1"> 0 - 30.000</label>
-          <label><input class="radiobuton" type="radio" name="preciofilter" value="rango2"> 30.000 - 60.000 </label>
-          <label><input class="radiobuton" type="radio" name="preciofilter" value="rango3"> 60.000 - 100.000 </label>
-          <label><input class="radiobuton" type="radio" name="preciofilter" value="rango5"> &gt; 100.000 </label>
-        </section>
-
-        <section class="filtros">
-          <section class="filtro__tres">
-            <label for="editorial">Filtrar por editorial:</label>
-            <select name="editorial" id="edit">
-              <option value=""></option>
-              <option value="Editorial1">Editorial ABC</option>
-              <option value="genero2">Editorial DEF</option>
-              <option value="genero3">Editorial GHI</option>
-              <option value="genero4">Editorial JKL</option>
-              <option value="genero5">Editorial MNO</option>
-              <option value="genero6">Editorial PQR</option>
-              <option value="genero7">Editorial XYZ</option>
-            </select>
-          </section>
-          
-        
-        <button onclick="filtrarProductos()" class="btn">Filtrar</button>
-        <button onclick ="cleanAll()" class="btn">Limpiar</button>
-
-      </section>
-
-          
-          <div class="loading-indicator" style="display: none;">Cargando...</div>
       
-          
-          <article id="results-list"></article>
+          <label for="editorial">Editorial:</label>
+          <select id="editSelect">
+            <option value="">Seleccione una Editorial</option>
+            <option value="">Editorial ABC</option>
+            <option value="">Editorial DEF</option>
+            <option value="">Editorial GHI</option>
+            <option value="">Editorial JKL</option>
+            <option value="">Editorial MNO</option>
+            <option value="">Editorial PQR</option>
+            <option value="">Editorial XYZ</option>
+
+            
+          </select>
+      
+          <label for="precio">Precio:</label>
+          <input type="radio" id="precio-min" name="precio" value="0-30.000">
+          <label for="precio-min">0-30.000</label>
+          <input type="radio" id="precio-med" name="precio" value="30.000-60.000">
+          <label for="precio-med">30.000-60.000</label>
+          <input type="radio" id="precio-max" name="precio" value="60.000-">
+          <label for="precio-max">60.000+</label>
+      
+          <button id="btn-buscar">Buscar</button>
+          <button id="btn-limpiar">Limpiar</button>
         </form>
       </section>
-
-      
+      <section id="lista-resultados">
+        <h2>Resultados</h2>
+        <table id="tabla-productos">
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Imagen</th>
+              <th>Categoría</th>
+              <th>Precio</th>
+              <th>Característica 1</th>
+              <th>Característica 2</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-productos">
+          </tbody>
+        </table>
+        <button id="btn-regresar">Regresar</button>
+      </section>
 
     </main>
 
-    <script src="js/.js"></script>
+    <script src="js/Data.js"></script>
+    <script src="js/Buscador.js"></script>
 </body>
 </html>

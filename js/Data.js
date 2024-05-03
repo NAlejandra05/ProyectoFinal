@@ -1,4 +1,4 @@
-const libros = [
+ const libros = [
     {
       titulo: "Cien años de soledad",
       autor: "García Márquez",
@@ -16,7 +16,7 @@ const libros = [
         codigo: "5A6b7Cd8",
         editorial: "Editorial DEF",
         precio: 45000,
-        añoPublicacion: 1949,
+        publicacion: 1949,
         imagen: "./img/1984.jpeg" 
       },
       {
@@ -26,7 +26,7 @@ const libros = [
         codigo: "9eFgH1Ij",
         editorial: "Editorial GHI",
         precio: 35000,
-        añoPublicacion: 1813,
+        publicacion: 1813,
         imagen: "./img/Orgullo y prejuicio.jpg" 
       },
       {
@@ -36,7 +36,7 @@ const libros = [
         codigo: "kLmN2oPq",
         editorial: "Editorial JKL",
         precio: 40000,
-        añoPublicacion: 1988,
+        publicacion: 1988,
         imagen: "./img/El Alquimista.jpg" 
       },
       {
@@ -46,7 +46,7 @@ const libros = [
         codigo: "3rStUv4Wx",
         editorial: "Editorial MNO",
         precio: 30000,
-        añoPublicacion: 1953,
+        publicacion: 1953,
         imagen: "./img/La Odisea.jpeg" 
       },
       {
@@ -56,7 +56,7 @@ const libros = [
         codigo: "7yZ8Ab9Cd ",
         editorial: "Editorial PQR",
         precio: 38000,
-        añoPublicacion: 1960,
+        publicacion: 1960,
         imagen: "./img/Matar un ruiseñor.jpeg" 
       },
       {
@@ -66,7 +66,7 @@ const libros = [
         codigo: "eF1gH2iJ3",
         editorial: "Editorial XYZ",
         precio: 42000,
-        añoPublicacion: 1943,
+        publicacion: 1943,
         imagen: "./img/El Principito.jpeg" 
       },
       {
@@ -76,7 +76,7 @@ const libros = [
         codigo: " 1Aa2b3C4d ",
         editorial: "Editorial ABC",
         precio: 55000,
-        añoPublicacion:1847 ,
+        publicacion:1847 ,
         imagen: "./img/Cumbres borrascosas.jpeg" 
       },
       {
@@ -86,7 +86,7 @@ const libros = [
         codigo: "9Zz1Aa2Bb",
         editorial: "Editorial DEF",
         precio: 51000,
-        añoPublicacion: 1915,
+        publicacion: 1915,
         imagen: "./img/La Metamorfosis.jpeg" 
       },
       {
@@ -96,7 +96,7 @@ const libros = [
         codigo: "2Ii3Jj4Kk",
         editorial: "Editorial GHI",
         precio: 62000 ,
-        añoPublicacion:1963 ,
+        publicacion: 1963 ,
         imagen: "./img/Rayuela.jpeg" 
       },
       {
@@ -106,7 +106,7 @@ const libros = [
         codigo: "5Ll6Mm7Nn",
         editorial: " Editorial JQL",
         precio: 58000,
-        añoPublicacion: 1862,
+        publicacion: 1862,
         imagen: "./img/Los miserables.jpeg" 
       },
       {
@@ -116,7 +116,7 @@ const libros = [
         codigo: "0Uu1Vv2Ww",
         editorial: "Editorial MNO",
         precio: 59000,
-        añoPublicacion: 1945,
+        publicacion: 1945,
         imagen: "./img/Rebelión en la granja.jpeg" 
       },
       {
@@ -126,7 +126,7 @@ const libros = [
         codigo: "7Xx8Yy9Zz",
         editorial: "Editorial PQR ",
         precio: 55000,
-        añoPublicacion:1605 ,
+        publicacion:1605 ,
         imagen: "./img/Don Quijote.jpeg" 
       },
       {
@@ -136,7 +136,7 @@ const libros = [
         codigo: "3Aa4Bb5Cc",
         editorial: "Editorial XYZ",
         precio: 51000,
-        añoPublicacion: 1877,
+        publicacion: 1877,
         imagen: "./img/Anna Karenina}.jpeg" 
       },
       {
@@ -146,7 +146,7 @@ const libros = [
         codigo: "6Dd7Ee8Ff",
         editorial: "Editorial ABC",
         precio: 57000,
-        añoPublicacion: 1954,
+        publicacion: 1954,
         imagen: "./img/El Señor de los Anillos.jpeg" 
       },
       {
@@ -156,7 +156,7 @@ const libros = [
         codigo: "9Gg1Hh2Ii",
         editorial: "Editorial DEF",
         precio: 53000,
-        añoPublicacion: 1985,
+        publicacion: 1985,
         imagen: "./img/El Perfume.jpeg" 
       },
       {
@@ -166,7 +166,7 @@ const libros = [
         codigo: "3Jj4Kk5Ll",
         editorial: "Editorial GHI",
         precio: 59000,
-        añoPublicacion: 2001,
+        publicacion: 2001,
         imagen: "./img/La Sombra del Viento.jpg" 
       },
       {
@@ -176,7 +176,7 @@ const libros = [
         codigo: " 6Mm7Nn8Oo",
         editorial: " Editorial JKL",
         precio:60000 ,
-        añoPublicacion: 2003,
+        publicacion: 2003,
         imagen: "./img/El código Da Vinci.jpeg" 
       },
       {
@@ -186,7 +186,7 @@ const libros = [
         codigo: "2Pp3Qq4Rr",
         editorial: " Editorial MNO",
         precio: 51000,
-        añoPublicacion:1952 ,
+        publicacion:1952 ,
         imagen: "./img/El viejo y el mar.jpeg" 
       },
       {
@@ -196,7 +196,7 @@ const libros = [
         codigo: "5Ss6Tt7Uu",
         editorial: " Editorial PQR",
         precio: 58000,
-        añoPublicacion: 1851,
+        publicacion: 1851,
         imagen: "./img/Moby Dick.jpeg" 
       },
       {
@@ -206,7 +206,7 @@ const libros = [
         codigo: "1Bb2Cc3Dd",
         editorial: "Editorial XYZ",
         precio: 57000,
-        añoPublicacion: 1948,
+        publicacion: 1948,
         imagen: "./img/El túnel.jpeg" 
       },
       {
@@ -216,7 +216,7 @@ const libros = [
         codigo: "E7F8g9",
         editorial: "Editorial ABC",
         precio:59000,
-        añoPublicacion:2006 ,
+        publicacion:2006 ,
         imagen: "./img/La carretera.jpg" 
       },
       {
@@ -226,7 +226,7 @@ const libros = [
         codigo: " Y1Z2A3",
         editorial: "Editorial DEF",
         precio: 56000,
-        añoPublicacion: 1955 ,
+        publicacion: 1955 ,
         imagen: "./img/Lolita.jpg" 
       },
       {
@@ -236,7 +236,7 @@ const libros = [
         codigo: "B4C5d6",
         editorial: "Editorial GHI",
         precio: 51000,
-        añoPublicacion:2001 ,
+        publicacion:2001 ,
         imagen: "./img/La sombra del viento.jpg" 
       },
       {
@@ -246,7 +246,7 @@ const libros = [
         codigo: "V6W7x8",
         editorial: "Editorial JKL",
         precio:57000 ,
-        añoPublicacion: 1880,
+        publicacion: 1880,
         imagen: "./img/Los hermanos Karamázov.jpg" 
       },
       {
@@ -256,7 +256,7 @@ const libros = [
         codigo: " M1N2o3",
         editorial: " Editorial ABC",
         precio: 53000,
-        añoPublicacion: 1869,
+        publicacion: 1869,
         imagen: "./img/Guerra y paz.jpeg" 
       },
       {
@@ -266,7 +266,7 @@ const libros = [
         codigo: "G1H2i3",
         editorial: "Editorial MNO",
         precio: 59000,
-        añoPublicacion: 1866,
+        publicacion: 1866,
         imagen: "./img/Crimen y castigo.jpg" 
       },
       {
@@ -276,7 +276,7 @@ const libros = [
         codigo: "X9Y1z2",
         editorial: "Editorial PQR",
         precio:56000,
-        añoPublicacion:1963,
+        publicacion:1963,
         imagen: "./img/La ciudad y los perros.jpg" 
       },
       {
@@ -286,7 +286,7 @@ const libros = [
         codigo: "U6V7w8",
         editorial: "Editorial ABC",
         precio:57000,
-        añoPublicacion: 1995,
+        publicacion: 1995,
         imagen: "./img/El lector.jpg" 
       },
       {
@@ -296,7 +296,7 @@ const libros = [
         codigo: "O9P1q2",
         editorial: "Editorial DEF",
         precio:60000,
-        añoPublicacion:2015,
+        publicacion:2015,
         imagen: "./img/La chica del tren.jpg" 
       },
       {
@@ -306,7 +306,7 @@ const libros = [
         codigo: "I3J4k5",
         editorial: "Editorial XYZ",
         precio:57000,
-        añoPublicacion:1996,
+        publicacion:1996,
         imagen: "./img/El club de la pelea.jpg" 
       },
       {
@@ -316,7 +316,7 @@ const libros = [
         codigo: "W9X1y2",
         editorial: "Editorial GHI",
         precio:53000,
-        añoPublicacion:1982,
+        publicacion:1982,
         imagen: "./img/La casa de los espíritus.jpg" 
       },
       {
@@ -326,7 +326,7 @@ const libros = [
         codigo: "T6U7v8",
         editorial: "Editorial JKL",
         precio:60000,
-        añoPublicacion:2000,
+        publicacion:2000,
         imagen: "./img/La fiesta del chivo.jpg" 
       },
       {
@@ -336,7 +336,7 @@ const libros = [
         codigo: "D9E1f2",
         editorial: "Editorial MNO",
         precio:58000,
-        añoPublicacion:1955,
+        publicacion:1955,
         imagen: "./img/Pedro Páramo.jpg" 
       },
       {
@@ -346,7 +346,7 @@ const libros = [
         codigo: "U9v1W2",
         editorial: "Editorial PQR",
         precio:59000,
-        añoPublicacion:2005,
+        publicacion:2005,
         imagen: "./img/La ladrona de libros.jpg" 
       },
       {
@@ -356,7 +356,7 @@ const libros = [
         codigo: "5Ee6Ff7Gg",
         editorial: "Editorial XYZ",
         precio:54000,
-        añoPublicacion:1985,
+        publicacion:1985,
         imagen: "./img/Amor tiempos cólera.jpg" 
       },
       {
@@ -366,7 +366,7 @@ const libros = [
         codigo: "2Zz3Aa4Bb",
         editorial: "Editorial ABC",
         precio:57000,
-        añoPublicacion:1979,
+        publicacion:1979,
         imagen: "./img/Historia interminable.jpg" 
       },
       {
@@ -376,7 +376,7 @@ const libros = [
         codigo: "6Nn7Oo8Pp",
         editorial: "Editorial DEF",
         precio:51000,
-        añoPublicacion:1989,
+        publicacion:1989,
         imagen: "./img/Los pilares tierra.jpg" 
       },
       {
@@ -386,7 +386,7 @@ const libros = [
         codigo: "0Kk1Ll2Mm",
         editorial: "Editorial GHI ",
         precio:60000,
-        añoPublicacion:1873,
+        publicacion:1873,
         imagen: "./img/Vuelta al mundo.jpg" 
       },
       {
@@ -396,7 +396,7 @@ const libros = [
         codigo: "3Hh4Ii5Jj",
         editorial: "Editorial KLM",
         precio:59000 ,
-        añoPublicacion:1988,
+        publicacion:1988,
         imagen: "./img/Matilda.jpg" 
       },
       {
@@ -406,7 +406,7 @@ const libros = [
         codigo: "8Vv9Ww1Xx",
         editorial: "Editorial MNO",
         precio:56000,
-        añoPublicacion:1984,
+        publicacion:1984,
         imagen: "./img/Insoportable levedad.jpg" 
       },
       {
@@ -416,7 +416,7 @@ const libros = [
         codigo: "a1B2c3D4",
         editorial: " Editorial ABC",
         precio:55000,
-        añoPublicacion:1986,
+        publicacion:1986,
         imagen: "./img/It.jpg" 
       },
       {
@@ -426,7 +426,7 @@ const libros = [
         codigo: "E5f6G7g8",
         editorial: "Editorial XYZ",
         precio:62000,
-        añoPublicacion:1977,
+        publicacion:1977,
         imagen: "./img/El resplandor.jpg" 
       },
       {
@@ -436,7 +436,7 @@ const libros = [
         codigo: "H9I1j2K3",
         editorial: "Editorial PQR",
         precio: 48000,
-        añoPublicacion:1974,
+        publicacion:1974,
         imagen: "./img/Carrie.jpg" 
       },
       {
@@ -446,7 +446,7 @@ const libros = [
         codigo: "L4Mm5Nn6",
         editorial: " Editorial ABC",
         precio: 57000,
-        añoPublicacion: 1971,
+        publicacion: 1971,
         imagen: "./img/El Exorcista.jpg" 
       },
       {
@@ -456,7 +456,7 @@ const libros = [
         codigo: "O7Pp8Qq9",
         editorial: "Editorial DEF",
         precio: 53000,
-        añoPublicacion:1897,
+        publicacion:1897,
         imagen: "./img/Drácula.jpg" 
       },
       {
@@ -466,7 +466,7 @@ const libros = [
         codigo: "R1Ss2Tt3",
         editorial: " Editorial GHI",
         precio:59000,
-        añoPublicacion:1818,
+        publicacion:1818,
         imagen: "./img/Frankenstein.jpg" 
       },
       {
@@ -476,7 +476,7 @@ const libros = [
         codigo: "U6Vv7Ww8",
         editorial: "Editorial JKL",
         precio:60000,
-        añoPublicacion:1845,
+        publicacion:1845,
         imagen: "./img/El cuervo.jpg" 
       },
       {
@@ -486,7 +486,7 @@ const libros = [
         codigo: " X2Yy3Zz4",
         editorial: "Editorial DEF",
         precio: 51000,
-        añoPublicacion: 1983,
+        publicacion: 1983,
         imagen: "./img/La mujer de negro.jpg" 
       },
       {
@@ -496,7 +496,7 @@ const libros = [
         codigo: "D9Ee1Ff2",
         editorial: "Editorial MNO",
         precio:58000 ,
-        añoPublicacion: 1987,
+        publicacion: 1987,
         imagen: "./img/Misery.jpg" 
       },
       
@@ -504,75 +504,6 @@ const libros = [
 
 
 
-let itemsPerPage = 15;
-let currentPage = 1;
 
 
-function showProducts() {
-  const productList = document.getElementById('contenedorlibros');
-  productList.innerHTML = '';
-
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = currentPage * itemsPerPage;
-
-  const currentProducts = libros.slice(startIndex, endIndex);
-
-  currentProducts.forEach(product => {
-    const productCard = document.createElement('div');
-    productCard.classList.add('product-card');
-
-    
-    productCard.innerHTML = `
-      <img src="${product.imagen}" alt="${product.titulo}">
-      <h3>${product.titulo}</h3>
-      <p>Autor: ${product.autor}</p>
-      <p>Género: ${product.genero}</p>
-      <p>Codigo: ${product.codigo}</p>
-      <p>Editorial: ${product.editorial}</p>
-      <p>Precio: ${product.precio}</p>
-      <p>Año de publicación: ${product.publicacion}</p>
-    `;
-    productList.appendChild(productCard);
-  });
-
-  const prevBtn = document.getElementById('prev-btn');
-  const nextBtn = document.getElementById('next-btn');
-  const currentPageDisplay = document.getElementById('current-page');
-
-  prevBtn.disabled = currentPage === 1;
-  nextBtn.disabled = endIndex >= libros.length;
-
-  currentPageDisplay.textContent = `Página ${currentPage} de ${Math.ceil(libros.length / itemsPerPage)}`;
-}
-
-
-function prevPage() {
-  if (currentPage > 1) {
-    currentPage--;
-    showProducts(currentPage);
-  }
-}
-
-
-function nextPage() {
-  const maxPage = Math.ceil(libros.length / itemsPerPage);
-  if (currentPage < maxPage) {
-    currentPage++;
-    showProducts(currentPage);
-  }
-}
-
-
-function adjustPaginationByWindowSize() {
-  const winWidth = window.innerWidth;
-  if (winWidth > 1600) { itemsPerPage = 15; }
-  else if (winWidth > 1230) { itemsPerPage = 15; }
-  else if (winWidth > 980) { itemsPerPage = 15; }
-  else if (winWidth > 750) { itemsPerPage = 15; }
-  else if (winWidth > 510) { itemsPerPage = 15; }
-  else { itemsPerPage = 15; }
-  showProducts(); 
-}
-window.onload = adjustPaginationByWindowSize;
-window.onresize = adjustPaginationByWindowSize;
 
