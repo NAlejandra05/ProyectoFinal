@@ -21,7 +21,7 @@
          Este formulario te guiará a través de los campos necesarios."</p>
     </section>
 
-    <form class="productForm">
+    <form class="productForm" id="productForm">
 
       <h1> Registro de Nuevo Producto </h1>
       
@@ -55,20 +55,21 @@
           <label for="precio">Precio:</label>
           <input type="text" id="precio" pattern="\d+(\.\d{1,2})?" required>
         
-          <label for="añoPublicacion:">Año Publicacion:</label>
+          <label for="añoPublicacion">Año Publicacion:</label>
           <input type="text" id="añoPublicacion" name="">
         
           <label for="imagen">Imagen:</label>
           <input type="file" id="imagen" accept="image/*" required>
-        
+      
+      </form>
        <section class="btn">
-        <button type="submit">Registrar Producto</button>
+        <button type="button" onclick="guardarDatos()">Registrar Producto</button>
         <button type="button" onclick="limpiarCampos()">Limpiar Campos</button>
        </section> 
-        
-      </form>
+      
   </main>
   <script src="js/Registro.js"></script>
+  <script src="js/Data.js"></script>
 
 </body>
 </html>

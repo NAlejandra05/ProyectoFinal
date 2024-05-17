@@ -8,7 +8,8 @@ function showProducts() {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = currentPage * itemsPerPage;
 
-  const currentProducts = libros.slice(startIndex, endIndex);
+  const allProducts = [...libros, ...(JSON.parse(localStorage.getItem('productos')) || [])];
+  const currentProducts = allProducts.slice(startIndex, endIndex);
 
   currentProducts.forEach(product => {
     const productCard = document.createElement('div');
@@ -22,7 +23,7 @@ function showProducts() {
       <p>Codigo: ${product.codigo}</p>
       <p>Editorial: ${product.editorial}</p>
       <p>Precio: ${product.precio}</p>
-      <p>Año de publicación: ${product.publicacion}</p>
+      <p>Año de publicación: ${product.añoPublicacion}</p>
     `;
     productList.appendChild(productCard);
   });
@@ -32,9 +33,9 @@ function showProducts() {
   const currentPageDisplay = document.getElementById('current-page');
 
   prevBtn.disabled = currentPage === 1;
-  nextBtn.disabled = endIndex >= libros.length;
+  nextBtn.disabled = endIndex >= allProducts.length;
 
-  currentPageDisplay.textContent = `Página ${currentPage} de ${Math.ceil(libros.length / itemsPerPage)}`;
+  currentPageDisplay.textContent = `Página ${currentPage} de ${Math.ceil(allProducts.length / itemsPerPage)}`;
 }
 
 function prevPage() {
@@ -45,7 +46,7 @@ function prevPage() {
 }
 
 function nextPage() {
-  const maxPage = Math.ceil(libros.length / itemsPerPage);
+  const maxPage = Math.ceil((libros.length + JSON.parse(localStorage.getItem('productos') || '[]').length) / itemsPerPage);
   if (currentPage < maxPage) {
     currentPage++;
     showProducts();
@@ -93,11 +94,6 @@ function slides(){
     },1500);
   }
 }
-
 document.getElementById('registerBtn').addEventListener('click', function() {
   window.location.href = 'Registro.html';
-});
-
-document.getElementById('searchBtn').addEventListener('click', function() {
-  window.location.href = 'Buscador.html';
 });
