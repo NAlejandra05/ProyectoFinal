@@ -1,84 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador de Productos</title>
+    <link rel="stylesheet" href="css/Buscador.css">
 </head>
 <body>
     <header>
         <figure>
-          <img src="img/logo2.png" alt="Páginas Encantadas" />
-          <img src="img/eslogan.png" alt="Páginas Encantadas" />
-          <h1> Buscador de productos </h1>
+            <img src="img/logo2.png" alt="Páginas Encantadas" />
+            <img src="img/eslogan.png" alt="Páginas Encantadas" />
+            <h1>Buscador de productos</h1>
+        </figure>
     </header>
 
     <main>
-      <section id="filtros">
-        <h2>Filtros</h2>
-        <form>
-          <label for="genero">Género:</label>
-          <select id="geneSelect">
-            <option value="">Seleccione un género</option>
-            <option value="">Terror</option>
-            <option value="">Ficción</option>
-            <option value="">Romance</option>
-            <option value="">Clásico</option>
-            <option value="">Fantasía</option>
-            <option value="">Misterio</option>
-            <option value="">Aventura</option>
-            <option value="">Histórico</option>
-            <option value="">Infantil</option>
-
-            
-          </select>
-      
-          <label for="editorial">Editorial:</label>
-          <select id="editSelect">
-            <option value="">Seleccione una Editorial</option>
-            <option value="">Editorial ABC</option>
-            <option value="">Editorial DEF</option>
-            <option value="">Editorial GHI</option>
-            <option value="">Editorial JKL</option>
-            <option value="">Editorial MNO</option>
-            <option value="">Editorial PQR</option>
-            <option value="">Editorial XYZ</option>
-
-            
-          </select>
-      
-          <label for="precio">Precio:</label>
-          <input type="radio" id="precio-min" name="precio" value="0-30.000">
-          <label for="precio-min">0-30.000</label>
-          <input type="radio" id="precio-med" name="precio" value="30.000-60.000">
-          <label for="precio-med">30.000-60.000</label>
-          <input type="radio" id="precio-max" name="precio" value="60.000-">
-          <label for="precio-max">60.000+</label>
-      
-          <button id="btn-buscar">Buscar</button>
-          <button id="btn-limpiar">Limpiar</button>
-        </form>
-      </section>
-      <section id="lista-resultados">
-        <h2>Resultados</h2>
-        <table id="tabla-productos">
-          <thead>
-            <tr>
-              <th>Título</th>
-              <th>Imagen</th>
-              <th>Categoría</th>
-              <th>Precio</th>
-              <th>Característica 1</th>
-              <th>Característica 2</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody id="tbody-productos">
-          </tbody>
+        <div class="controles">
+            <input type="text" id="filtro" placeholder="Buscar por título, autor, género...">
+            <button id="limpiar">Limpiar</button>
+            <button id="buscar">Buscar</button>
+        </div>
+        <table id="tabla-libros">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Imagen</th>
+                    <th>Género</th>
+                    <th>Precio</th>
+                    <th>Autor</th>
+                    <th>Editorial</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
         </table>
-        <button id="btn-regresar">Regresar</button>
-      </section>
-
+        <div id="paginacion">
+           
+        </div>
+        <button id="regresar">Regresar a la vista principal</button>
     </main>
 
     <script src="js/Data.js"></script>

@@ -1,75 +1,168 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  padding: 20px;
+}
+
+header {
+  background-color: #ebd9c856 ;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+header img {
+  max-width: 250px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.productForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.productForm h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #495057;
+}
+
+.productForm .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.productForm label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #495057;
+  text-align: center;
+}
+
+.productForm input, .productForm select {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  background-color: #e9ecef;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.productForm input:focus, .productForm select:focus {
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: none;
+}
+
+.productForm input[type="file"] {
+  padding: 3px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  background-color:  #edcfb3ec;
+  color: rgb(13, 13, 13);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+}
+
+button:hover {
+  background-color: #f2ad6c;
+}
+
+button:nth-child(2) {
+  background-color: #edcfb3ec;
+}
+
+button:nth-child(2):hover {
+  background-color: #f2ad6c;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-text p {
+  margin: 5px 0;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
   .productForm {
-    max-width: 600px;
-    margin: 0 auto;
+      grid-template-columns: 1fr 1fr;
   }
-  
+
   .productForm h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+      grid-column: span 2;
   }
-  
-  .productForm label {
-    display: block;
-    margin-bottom: 5px;
+
+  .productForm .form-group {
+      grid-column: span 2;
   }
-  
-  .productForm input[type="text"],
-  .productForm select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  .productForm input[type="file"] {
-    margin-top: 5px;
-  }
-  
-  .productForm button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .productForm button[type="submit"] {
-    margin-right: 10px;
-  }
-  
-  .productForm button[type="button"] {
-    background-color: #dc3545;
-  }
-  
+
+  .productForm input[type="file"],
   .btn {
-    text-align: center;
+      grid-column: span 2;
   }
+}

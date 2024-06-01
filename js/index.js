@@ -20,10 +20,11 @@ function showProducts() {
       <h3>${product.titulo}</h3>
       <p>Autor: ${product.autor}</p>
       <p>Género: ${product.genero}</p>
-      <p>Codigo: ${product.codigo}</p>
+      <p>Código: ${product.codigo}</p>
       <p>Editorial: ${product.editorial}</p>
       <p>Precio: ${product.precio}</p>
       <p>Año de publicación: ${product.añoPublicacion}</p>
+      <button onclick="eliminarProducto('${product.titulo}')">Eliminar Producto</button>
     `;
     productList.appendChild(productCard);
   });
@@ -49,6 +50,16 @@ function nextPage() {
   const maxPage = Math.ceil((libros.length + JSON.parse(localStorage.getItem('productos') || '[]').length) / itemsPerPage);
   if (currentPage < maxPage) {
     currentPage++;
+    showProducts();
+  }
+}
+
+function eliminarProducto(titulo) {
+  let productosGuardados = JSON.parse(localStorage.getItem('productos')) || [];
+  const index = productosGuardados.findIndex(producto => producto.titulo === titulo);
+  if (index !== -1) {
+    productosGuardados.splice(index, 1);
+    localStorage.setItem('productos', JSON.stringify(productosGuardados));
     showProducts();
   }
 }
@@ -94,6 +105,11 @@ function slides(){
     },1500);
   }
 }
+
 document.getElementById('registerBtn').addEventListener('click', function() {
   window.location.href = 'Registro.html';
+});
+
+document.getElementById('searchBtn').addEventListener('click', function() {
+  window.location.href = 'Buscador.html';
 });
